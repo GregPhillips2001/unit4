@@ -3,4 +3,7 @@
 #functionDemo.py - learning functions 
 
 def hw():
-    print("Hello, world!")
+    print("Hello, world!") #defines what function will do
+
+hw() #actually runs the function
+hw()
