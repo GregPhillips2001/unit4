@@ -18,7 +18,8 @@ def moveLeft(event):
         monkey.x -= CELL_SIZE
     
 def moveUp(event):
-    monkey.y -= CELL_SIZE
+    if monkey.y > 0:
+        monkey.y -= CELL_SIZE
     
 def moveDown(event):
     monkey.y += CELL_SIZE
