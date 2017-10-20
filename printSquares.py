@@ -8,4 +8,4 @@ def printSquares(rows, cols):
         print("|  "*rows+"|")
         
     print("+--"*rows+"+")
-printSquares(2,4)
+printSquares(4,2)
