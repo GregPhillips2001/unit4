@@ -5,3 +5,7 @@
 def printSquares(rows, cols):
     for i in range(1,cols+1):
         print("+--"*rows+"+")
+        print("|  "*rows+"|")
+        
+    print("+--"*rows+"+")
+printSquares(2,4)
