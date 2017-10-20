@@ -40,17 +40,25 @@ def moveDown(event):
 def moveBanana():
     banana.x = randint(0, COLS-1)*CELL_SIZE
     banana.y = randint(0, ROWS-1)*CELL_SIZE
+    data["frames"]
 
 def updateScore():
     data["score"] += 10
     data["scoreText"].destroy()
     scoreBox = TextAsset("Score = "+str(data["score"]))
     data["scoreText"] = Sprite(scoreBox, ((COLS-9)*CELL_SIZE, 0))
+    
+def step():
+    data["frames"]+=1
+    if data["frames"] == 30:
+        moveBanana()
+        
 
 if __name__ == "__main__":
     
     data = {}
     data["score"] = 0
+    data["frames"]=0
     
     green = Color(0x006600, 1)
     brown = Color(0x8B4513, 1)
