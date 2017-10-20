@@ -40,7 +40,7 @@ def moveDown(event):
 def moveBanana():
     banana.x = randint(0, COLS-1)*CELL_SIZE
     banana.y = randint(0, ROWS-1)*CELL_SIZE
-    data["frames"]
+    data["frames"] = 0
 
 def updateScore():
     data["score"] += 10
@@ -49,7 +49,7 @@ def updateScore():
     data["scoreText"] = Sprite(scoreBox, ((COLS-9)*CELL_SIZE, 0))
     
 def step():
-    data["frames"]+=1
+    data["frames"] += 1
     if data["frames"] == 30:
         moveBanana()
         
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     
     data = {}
     data["score"] = 0
-    data["frames"]=0
+    data["frames"] = 0
     
     green = Color(0x006600, 1)
     brown = Color(0x8B4513, 1)
@@ -78,4 +78,4 @@ if __name__ == "__main__":
     App().listenKeyEvent("keydown","left arrow", moveLeft)
     App().listenKeyEvent("keydown","up arrow", moveUp)
     App().listenKeyEvent("keydown","down arrow", moveDown)
-    App().run()
+    App().run(step)
