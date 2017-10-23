@@ -14,6 +14,6 @@ def stringUnion(word1, word2):
     
     return total
 
-total = stringUnion("boonk", "gang")
+total = stringUnion("book", "goodrich")
 print(total)
 
