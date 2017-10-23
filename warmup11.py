@@ -7,4 +7,4 @@ def isPrime(n):
         if n%i==0:
             return False
     return True
-isPrime(8)
+print(isPrime(25))
