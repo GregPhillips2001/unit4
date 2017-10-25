@@ -14,5 +14,5 @@ def stringIntersect(word1, word2):
     
     return total
 
-total = stringUnion("greg", "game")
+total = stringIntersect("greg", "game")
 print(total)
