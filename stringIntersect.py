@@ -4,10 +4,12 @@
 
 def stringIntersect(word1, word2):
     total = " "
-    for ch in word1:
-        if ch in word2:
+    word1 = word1.lower()
+    word2 = word2.lower()
+    for ch in word2:
+        if ch in word1 and ch not in total:
             total += ch
     return total
 
-total = stringIntersect("greg", "game")
+total = stringIntersect("pensylvania", "mississippi")
 print(total)
