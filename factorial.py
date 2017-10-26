@@ -14,8 +14,8 @@ print(factorial(5))
         
 def factorial(num):
     if num == 1:
-        print(num)
+        return num
     else:
         num *= (num-1)
         factorial(num-1)
-factorial(5)
+print(factorial(5))
