@@ -9,5 +9,6 @@ def factorial(n):
     else:
         total = total*(n-1)
         factorial(n-1)
-factorial(5)
+total = factorial(5)
+print(total)
     
