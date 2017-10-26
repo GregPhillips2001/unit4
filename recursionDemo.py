@@ -3,6 +3,6 @@
 #recursionDemo.py - A recursive version of the countdown function
 
 def countdown(n):
-    print("Boon!")
+    print("Boom!")
     
 countdown(5)
