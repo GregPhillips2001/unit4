@@ -4,13 +4,13 @@
 
 
 
-def factorial(n):
+"""def factorial(n):
     total = n
     while n>=2:
         n-=1
         total = total*n
     return total
-print(factorial(5))
+print(factorial(5))"""
         
 def factorial(num):
     if num == 1:
