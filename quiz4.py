@@ -3,7 +3,8 @@
 #quiz4.py
 
 def csia():
-    print("Computer Science is Awesome " *5)
+    for i in range(1,6):
+        print("Computer Science is Awesome ")
 csia()
 
 def average(x,y,z):
