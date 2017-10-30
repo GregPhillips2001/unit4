@@ -11,8 +11,12 @@ def average(x,y,z):
 print(average(1,2,3))
 
 def lastLetter(word):
+    end = len(word)
+    letter = 0
     for ch in word:
-        print(ch) #How do you make it just the last letter 
+        letter += 1
+        if letter == end:
+            print(ch) 
 lastLetter("Greg")
 
 def same(x,y):
