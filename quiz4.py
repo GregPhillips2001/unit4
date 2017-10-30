@@ -12,6 +12,15 @@ print(average(1,2,3))
 
 def lastLetter(word):
     for ch in word:
-        print(ch)
+        print(ch) #How do you make it just the last letter 
 lastLetter("Greg")
+
+def same(x,y):
+    if x == y:
+        return True
+    else:
+        return False
+print(same(2*3,7-1))
+
+
     
